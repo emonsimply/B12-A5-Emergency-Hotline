@@ -23,12 +23,11 @@ for (let card of cards) {
     minute: "2-digit",
     second: "2-digit",
   });
-  console.log(title, number, time);
 
   const callBtn = card.childNodes[15].childNodes[3];
   callBtn.addEventListener("click", function () {
     if (coinCount < 20) {
-      alert("Not enough coins to make a call!");
+      alert("❌Not enough coins to make a call!");
       return;
     }
 
@@ -50,7 +49,16 @@ for (let card of cards) {
     historyCard.appendChild(newHistory);
   });
 
-  clearBtn.addEventListener("click", function () {
-    historyCard.innerHTML = "";
+  const copyBtn = card.childNodes[15].childNodes[1];
+  copyBtn.addEventListener("click", function () {
+    navigator.clipboard.writeText(number);
+    alert("Copied: " + number);
+    copyCount++;
+    document.getElementById("copy-count").innerText = copyCount;
   });
 }
+
+// clear button
+clearBtn.addEventListener("click", function () {
+  historyCard.innerHTML = "";
+});
