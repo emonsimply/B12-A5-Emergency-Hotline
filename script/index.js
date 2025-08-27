@@ -4,6 +4,7 @@ let copyCount = Number(document.getElementById("copy-count").innerText);
 
 const cards = document.getElementsByClassName("card");
 const historyCard = document.getElementById("history-card");
+const clearBtn = document.getElementById("clear-btn");
 
 for (let card of cards) {
   // Heart Count
@@ -47,5 +48,9 @@ for (let card of cards) {
           </div>
     `;
     historyCard.appendChild(newHistory);
+  });
+
+  clearBtn.addEventListener("click", function () {
+    historyCard.innerHTML = "";
   });
 }
