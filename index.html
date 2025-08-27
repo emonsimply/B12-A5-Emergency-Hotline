@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="bg-green-50">
     <header>
       <!-- Navbar -->
       <nav class="flex items-center justify-between max-w-7xl mx-auto p-4">
@@ -66,10 +66,10 @@
 
     <main class="max-w-7xl mx-auto my-12 grid grid-cols-12">
       <!-- Card Section -->
-      <section class="col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-4 gap-5">
+      <section class="col-span-12 md:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-4 gap-4">
 
         <!-- card 1 -->
-        <div class=" shadow-md rounded-2xl border border-gray-100 p-4">
+        <div class="card bg-white shadow-md rounded-2xl border border-gray-100 p-4">
             <div class="flex justify-between items-center">
               <div class="w-12 bg-red-100 rounded-2xl p-3">
                 <img src="./assets/emergency.png" alt="emergency">
@@ -95,7 +95,7 @@
           </div>
 
         <!-- card 2 -->
-        <div class=" shadow-md rounded-2xl border border-gray-100 p-4">
+        <div class="card bg-white shadow-md rounded-2xl border border-gray-100 p-4">
             <div class="flex justify-between items-center">
               <div class="w-12 bg-blue-100 rounded-2xl p-3">
                 <img src="./assets/police.png" alt="">
@@ -121,7 +121,7 @@
           </div>
 
         <!-- card 3 -->
-        <div class=" shadow-md rounded-2xl border border-gray-100 p-4">
+        <div class="card bg-white shadow-md rounded-2xl border border-gray-100 p-4">
             <div class="flex justify-between items-center">
               <div class="w-12 bg-red-100 rounded-2xl p-3">
                 <img src="./assets/fire-service.png" alt="">
@@ -147,7 +147,7 @@
           </div>
 
         <!-- card 4 -->
-        <div class=" shadow-md rounded-2xl border border-gray-100 p-4">
+        <div class="card bg-white shadow-md rounded-2xl border border-gray-100 p-4">
             <div class="flex justify-between items-center">
               <div class="w-12 bg-red-100 rounded-2xl p-3">
                 <img src="./assets/ambulance.png" alt="">
@@ -173,7 +173,7 @@
           </div>
 
         <!-- card 5 -->
-        <div class=" shadow-md rounded-2xl border border-gray-100 p-4">
+        <div class="card bg-white shadow-md rounded-2xl border border-gray-100 p-4">
             <div class="flex justify-between items-center">
               <div class="w-12 bg-red-100 rounded-2xl p-3">
                 <img src="./assets/emergency.png" alt="emergency">
@@ -198,7 +198,7 @@
             </div>
           </div>
         <!-- card 6 -->
-        <div class=" shadow-md rounded-2xl border border-gray-100 p-4">
+        <div class="card bg-white shadow-md rounded-2xl border border-gray-100 p-4">
             <div class="flex justify-between items-center">
               <div class="w-12 bg-red-100 rounded-2xl p-3">
                 <img src="./assets/emergency.png " alt="emergency">
@@ -225,7 +225,13 @@
       </section>
 
       <!-- History Section -->
-      <aside class="col-span-3"></aside>
+      <aside class="col-span-12 md:col-span-3 bg-white rounded-2xl p-4 mt-4 md:mt-0 mx-4 md:mx-0 md:mr-4  shadow-md border border-gray-100">
+        <div class="flex justify-between items-center">
+          <p class="font-semibold"><i class="fa-regular fa-clock"></i> Call History</p>
+          <button class="btn bg-green-600 hover:bg-green-500 text-white rounded-full px-6">Clear</button>
+        </div>
+
+      </aside>
     </main>
   </body>
 </html>
